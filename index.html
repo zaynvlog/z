@@ -1,80 +1,136 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>ZGames</title>
+<title>Zayn's Vlogs</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" type="image/jpg" href="https://raw.githubusercontent.com/zaynvlog/zaynvlog.github.io/main/image%20(2).png"/>
 <style>
-/* body */
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 1;
-}
-
-/* Header */
-.header {
-  
-  
-  
-  padding: 10px;
-  text-align: center;
-  background: #000783;
-  color: white;
-  font-size: 30px;
-}
-
-/* Content */
-.content {padding:20px;}
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
 </style>
 </head>
 <body>
 
-<div class="header">
-  <h2>ZGames is Loading...</h2>
-    <h4>This will take a few seconds.</h4>
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Home</a>
+
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Behind The Scenes</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+
+      </div>
+    </div>
+  
+  </div>
+</div>
+<!--NAVBAR-->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+
+  
+  <a href="https:/" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Behind The Scenes</a>
+
+</div>
+<!-- Page content -->
+<div class="w3-content" style="max-width:10000px;margin-top:46px">
+
+ <!-- Automatic Slideshow Images -->
+ <div class="mySlides w3-display-container w3-center">
+  <img src="update20.png" style="width:100%">
+  <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+ 
+  </div>
+</div>
+<div class="mySlides w3-display-container w3-center">
+  <img src="Update21.png" style="width:100%">
+  <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+   
+  </div>
+</div>
+<div class="mySlides w3-display-container w3-center">
+  <img src="update23.png" style="width:100%">
+  <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+ </div>
 </div>
 
 
-
+  <!-- The View Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:10000px" id="band">
+   
+   <image src="image (2).png" style="width: 100px; height: 100px;"></image>
+ 
 
   
+<br>
+<b style="font-size: 20px;"><a href="https://zaynvlog.github.io">View Channel</a></h6></b>
 
-<html>
+<br>
+<br>
+<h1>MY LATEST VIDEO</h1>
+<a href="https://www.youtube.com/watch?v=dfjr8FxkGp4"><img src="Untitled2e7.png" alt="" style="width:66%;"></a>
+<br>
+<h3>I Explored Poland's Sky Tower...</h3>
+    </h6>
+     <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+      
+      </div>
+    </div>
+  </div>
 
+  <!-- The Tour Section -->
+  
 
-<head>
-
-<title>
-    Redirecting...
-</title>
-
-
-
-
-<meta http-equiv="refresh" content="5;
-
-URL='https://nomaz10.github.io' " />
-
-
-</head>
-
-
-<body>
-
-
-</head>
-
-
-</html>
-
- <style>
-    body { background: #212121;}
+  <!-- The Contact Section -->
+ 
+  
+<!-- End Page Content -->
 
 
- </style>
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+ 
+  <p class="w3-medium">©Zayn's Vlogs</p>
+
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 3100);    
+}
 
 
-</b></p>
-<html>
-<head>
-<style>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+
+
+
+
+
